@@ -2,14 +2,9 @@ import type { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import { env } from "../config/envConfig.js";
 
-
-export const UserAuth = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
+export const UserAuth = (req: Request, res: Response, next: NextFunction) => {
   try {
-    const token:string| undefined = req.cookies?.token;
+    const token: string | undefined = req.cookies?.token;
 
     if (!token) {
       return res.status(401).json({
@@ -18,9 +13,9 @@ export const UserAuth = (
       });
     }
 
-    const decoded = jwt.verify(token, env.JWT_PASS)
-
-    // req.userId = decoded.userId;
+    const decoded = jwt.verify(token, env.JWT_PASS);
+    // @ts-ignore
+    req.userId = decoded.userId;
 
     next();
   } catch {
