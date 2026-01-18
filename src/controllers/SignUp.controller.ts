@@ -13,6 +13,7 @@ export const SignUp = async (req: Request, res: Response) => {
     if (!parsingData.success) {
       return res.status(411).json({
         message: "Error in Input",
+        error : parsingData.error
       });
     }
     const { username, password }: SignupType = parsingData?.data;
