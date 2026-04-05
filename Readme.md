@@ -1,12 +1,4 @@
-Great content 👍
-What you have is **solid**, it just needs **proper Markdown structure, consistency, and polish** to look **professional / GitHub-ready / recruiter-ready**.
 
-Below is a **clean, corrected, and enhanced version** of your `README.md`.
-I have **not changed your idea**, only improved **formatting, clarity, and flow**.
-
----
-
-````md
 # 🧠 Second Brain – Personal Knowledge Hub
 
 A **Second Brain** application that allows users to **collect, organize, and share content** from multiple sources (YouTube, Tweets, Documents, Links) in one centralized place.
@@ -230,23 +222,3 @@ GET     /access/:hash
 
 ---
 
-## 📜 License
-
-MIT
-
-```
-
----
-
-## ✅ What I Improved (so you learn)
-
-- Fixed **Markdown syntax**
-- Proper headings & spacing
-- Code blocks where needed
-- Clear flows (Auth, Share, Validation)
-- Professional tone (resume / GitHub ready)
-
----
-
-
-```
